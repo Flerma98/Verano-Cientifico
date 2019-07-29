@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/fondodegradado"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:paddingHorizontal="20dp"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#808080"
+                    android:background="@drawable/edittext_redondo"
+                    android:id="@+id/tilCorreo"
+                    android:hint="Ingresa tu Correo">
+
+                    <EditText
+                        android:id="@+id/txt_login_Correo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:textAlignment="textStart"
+                        android:drawableTint="@color/colorAccent"
+                        android:drawableLeft="@drawable/ic_correo"
+                        android:drawablePadding="5dp"
+                        android:maxLength="40"
+                        android:inputType="textEmailAddress"
+                        android:paddingTop="15dp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:paddingHorizontal="20dp"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#808080"
+                    android:background="@drawable/edittext_redondo"
+                    app:passwordToggleEnabled="true"
+                    android:id="@+id/tilContraseña"
+                    android:hint="Ingresa tu Contraseña">
+
+                    <EditText
+                        android:id="@+id/txt_login_Contraseña"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:drawableTint="@color/colorAccent"
+                        android:textAlignment="textStart"
+                        android:drawableStart="@drawable/ic_contrasena"
+                        android:drawablePadding="5dp"
+                        android:inputType="textPassword"
+                        android:maxLength="20"
+                        android:paddingTop="15dp"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/btn_login_Iniciar_Sesion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Iniciar Sesion"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:theme="@style/BotonLogin" />
+
+                <View
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dip"
+                    android:background="@color/colorPrimaryDark" />
+
+                <Button
+                    android:id="@+id/btn_login_Registrarse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Registrarse"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:theme="@style/BotonLogin" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.v4.widget.NestedScrollView
+        android:padding="10dp"
+        android:background="@drawable/fondocurvo"
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#808080"
+                android:textAlignment="center"
+                app:counterEnabled="true"
+                app:counterMaxLength="40"
+                android:id="@+id/til_Registrarse_Nombre"
+                app:errorEnabled="true"
+                android:hint="Ingresa tu Nombre">
+
+                <EditText
+                    android:id="@+id/txt_registrarse_Nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textAlignment="textStart"
+                    android:maxLength="40"
+                    android:drawableTint="@color/colorAccent"
+                    android:drawableLeft="@drawable/ic_usuario"
+                    android:drawablePadding="5dp"
+                    android:inputType="textCapWords|textPersonName"
+                    android:textSize="15sp"
+                    android:paddingTop="15dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#808080"
+                android:textAlignment="center"
+                app:counterEnabled="true"
+                app:counterMaxLength="10"
+                android:id="@+id/til_Registrarse_Celular"
+                app:errorEnabled="true"
+                android:hint="Numero de Celular">
+
+                <EditText
+                    android:id="@+id/txt_registrarse_Celular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textAlignment="textStart"
+                    android:maxLength="10"
+                    android:drawableTint="@color/colorAccent"
+                    android:drawableLeft="@drawable/ic_numero"
+                    android:drawablePadding="5dp"
+                    android:inputType="phone"
+                    android:textSize="15sp"
+                    android:paddingTop="15dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#808080"
+                android:textAlignment="center"
+                app:counterEnabled="true"
+                android:id="@+id/til_Registrarse_Correo"
+                app:errorEnabled="true"
+                app:counterMaxLength="40"
+                android:hint="Ingresa tu Correo">
+
+                <EditText
+                    android:id="@+id/txt_registrarse_Correo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textAlignment="textStart"
+                    android:drawableTint="@color/colorAccent"
+                    android:drawableLeft="@drawable/ic_correo"
+                    android:drawablePadding="5dp"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="40"
+                    android:textSize="15sp"
+                    android:paddingTop="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#808080"
+                android:textAlignment="center"
+                app:counterEnabled="true"
+                android:id="@+id/til_Registrarse_Contraseña"
+                app:errorEnabled="true"
+                app:counterMaxLength="20"
+                app:passwordToggleEnabled="true"
+                android:hint="Ingresa tu Contraseña">
+
+                <EditText
+                    android:id="@+id/txt_registrarse_Contraseña"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textAlignment="textStart"
+                    android:drawableTint="@color/colorAccent"
+                    android:drawableStart="@drawable/ic_contrasena"
+                    android:drawablePadding="5dp"
+                    android:maxLength="20"
+                    android:inputType="textPassword"
+                    android:textSize="15sp"
+                    android:paddingTop="15dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_registrarse_Registrar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Registrarse"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:theme="@style/BotonRegistrarse" />
+
+                <Button
+                    android:id="@+id/btn_registrarse_Cancelar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Cancelar"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:theme="@style/BotonRegistrarse" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

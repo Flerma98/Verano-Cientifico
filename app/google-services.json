@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "743231242219",
+    "firebase_url": "https://verano-cientifico.firebaseio.com",
+    "project_id": "verano-cientifico",
+    "storage_bucket": "verano-cientifico.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743231242219:android:3dff7d63c329bca3",
+        "android_client_info": {
+          "package_name": "com.fernandolerma.verano"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743231242219-2m75ik5v1uhv3k8vqbesemlktr1qhfb7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fernandolerma.verano",
+            "certificate_hash": "1f920f7f79edd487f7bac949bd36b78b0c6213aa"
+          }
+        },
+        {
+          "client_id": "743231242219-vk2oumsf5n6jnocaudq2pbu6dqoj6l96.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBw6Crl1x7ADJ2yFNTMpStyirLK4upELgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743231242219-vk2oumsf5n6jnocaudq2pbu6dqoj6l96.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
