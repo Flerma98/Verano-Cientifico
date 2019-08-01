@@ -1,42 +1,42 @@
 {
   "project_info": {
-    "project_number": "743231242219",
-    "firebase_url": "https://verano-cientifico.firebaseio.com",
-    "project_id": "verano-cientifico",
-    "storage_bucket": "verano-cientifico.appspot.com"
+    "project_number": "763656786984",
+    "firebase_url": "https://hornos.firebaseio.com",
+    "project_id": "hornos",
+    "storage_bucket": "hornos.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:743231242219:android:3dff7d63c329bca3",
+        "mobilesdk_app_id": "1:763656786984:android:3dff7d63c329bca3",
         "android_client_info": {
           "package_name": "com.fernandolerma.verano"
         }
       },
       "oauth_client": [
         {
-          "client_id": "743231242219-2m75ik5v1uhv3k8vqbesemlktr1qhfb7.apps.googleusercontent.com",
+          "client_id": "763656786984-rj4g2eid9psanmvihnbsd1d5vmdu3n81.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.fernandolerma.verano",
-            "certificate_hash": "1f920f7f79edd487f7bac949bd36b78b0c6213aa"
+            "certificate_hash": "a556adbcdd8a0295c929c772a8541329b4733988"
           }
         },
         {
-          "client_id": "743231242219-vk2oumsf5n6jnocaudq2pbu6dqoj6l96.apps.googleusercontent.com",
+          "client_id": "763656786984-mmj798nvrn8vsai8ef7ugoeajjkmojr8.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBw6Crl1x7ADJ2yFNTMpStyirLK4upELgk"
+          "current_key": "AIzaSyCuO7jxaJV6rGjPs7TCYKNP80bUPUPAf9k"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "743231242219-vk2oumsf5n6jnocaudq2pbu6dqoj6l96.apps.googleusercontent.com",
+              "client_id": "763656786984-mmj798nvrn8vsai8ef7ugoeajjkmojr8.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
