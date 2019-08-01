@@ -57,14 +57,14 @@ public class RecyclerSensores extends RecyclerView.Adapter<RecyclerSensores.Recy
         recyclerViewHolder.txtNombre.setText(sensor.getNombre());
         recyclerViewHolder.txtTemperatura.setText(sensor.getTemperatura() + "°C");
         recyclerViewHolder.txtHumedad.setText(sensor.getHumedad() + "%");
-        recyclerViewHolder.txtsetTemperatura.setText(String.valueOf(sensor.getManejo_temperatura()));
-        recyclerViewHolder.txtsetHumedad.setText(String.valueOf(sensor.getManejo_humedad()));
 
         recyclerViewHolder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(recyclerViewHolder.layout.getVisibility()==View.GONE){
                     recyclerViewHolder.layout.setVisibility(View.VISIBLE);
+                    recyclerViewHolder.txtsetTemperatura.setText(String.valueOf(sensor.getManejo_temperatura()));
+                    recyclerViewHolder.txtsetHumedad.setText(String.valueOf(sensor.getManejo_humedad()));
                 }else{
                     recyclerViewHolder.layout.setVisibility(View.GONE);
                 }
